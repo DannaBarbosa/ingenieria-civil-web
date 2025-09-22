@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingeniería Civil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Ingeniería Civil</h1>
+    <p>Universidad del Magdalena - Colombia</p>
+  </header>
+
+  <nav>
+    <a href="#perfil-profesional">Perfil Profesional</a>
+    <a href="#perfil-personal">Perfil Personal</a>
+    <a href="#estadisticas">Estadísticas</a>
+    <a href="#galeria">Galería</a>
+  </nav>
+
+  <section id="perfil-profesional">
+    <h2>Perfil Profesional</h2>
+    <p>Aquí puedes escribir tu experiencia, conocimientos y fortalezas como ingeniera civil.</p>
+  </section>
+
+  <section id="perfil-personal">
+    <h2>Perfil Personal</h2>
+    <p>Aquí puedes escribir tus intereses personales y metas de vida.</p>
+  </section>
+
+  <section id="estadisticas">
+    <h2>Datos y Gráficos</h2>
+    <iframe src="graficos.html" width="100%" height="600" style="border:none;"></iframe>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería Universidad del Magdalena</h2>
+    <img src="img/unimagdalena1.jpg" alt="Universidad del Magdalena" width="300">
+    <img src="img/unimagdalena2.jpg" alt="Campus" width="300">
+  </section>
+
+  <footer>
+    <p>© 2025 Ingeniería Civil - Universidad del Magdalena</p>
+  </footer>
+</body>
+</html>

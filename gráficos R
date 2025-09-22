@@ -1,0 +1,26 @@
+# Instalar librerías si no las tienes
+# install.packages("plotly")
+# install.packages("htmlwidgets")
+
+library(plotly)
+library(htmlwidgets)
+
+# Datos de ejemplo
+categorias <- c("Puentes", "Carreteras", "Edificaciones", "Obras hidráulicas")
+valores <- c(25, 40, 30, 20)
+
+# Crear gráfico de barras interactivo
+fig <- plot_ly(
+  x = categorias,
+  y = valores,
+  type = 'bar',
+  marker = list(color = c('#004080', '#0073e6', '#66b3ff', '#99ccff'))
+) %>%
+  layout(
+    title = "Proyectos de Ingeniería Civil",
+    xaxis = list(title = "Tipo de obra"),
+    yaxis = list(title = "Cantidad")
+  )
+
+# Guardar como HTML para incluir en la web
+saveWidget(fig, "graficos.html", selfcontained = TRUE)
